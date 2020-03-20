@@ -76,7 +76,7 @@ router.post('/register', (req, res, next) => {
 
 
 // Get loggout page
-router.get('/loggout', (req, res, next) => {
+router.get('/logout', (req, res, next) => {
     // Check if the session is exist
     if(req.session.user) {
         // destroy the session and redirect the user to the index page.
